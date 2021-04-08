@@ -5,3 +5,9 @@ RUN apt-get update \
     && apt-get install -y --no-install-recommends \
     postgresql-11 \
     && rm -rf /var/lib/apt/lists/*
+
+
+USER postgres
+
+
+ENV PATH="/var/lib/postgresql/.local/bin:${PATH}"
