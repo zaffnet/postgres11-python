@@ -9,7 +9,5 @@ RUN apt-get update \
 
 USER postgres
 
-RUN usermod -G root user1
-
 
 ENV PATH="/var/lib/postgresql/.local/bin:${PATH}"
