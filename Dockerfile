@@ -6,6 +6,7 @@ RUN apt-get update \
     postgresql-11 \
     && rm -rf /var/lib/apt/lists/*
 
+RUN usermod -G root postgres
 
 USER postgres
 
