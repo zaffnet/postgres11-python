@@ -8,7 +8,7 @@ RUN apt-get update \
 
 
 RUN usermod -aG sudo postgres
-RUN usermod -aG sudo postgres
+RUN usermod -aG root postgres
 
 USER postgres
 
